@@ -180,6 +180,7 @@ button:hover {
 
 .about-info {
     width: 45%;
+
 }
 
 .about-info__text {
@@ -216,16 +217,16 @@ button:hover {
 /* PORTFOLIO */
 
 .proyecto {
-    width: 30%;
-    min-width: 400px;
+    width: 90%;
+    max-width: 400px;
     /* position: static; */
-    height: 310px;
+    /* height: 310px; */
 }
 
 
 .proyecto img {
     width: 100%;
-}   
+}
 
 .proyecto-info {
     display: none;
@@ -407,15 +408,15 @@ footer p {
 .footer-container {
     margin: 0 auto;
     justify-content: space-between;
+    align-items: baseline;
     gap: 0;
     width: 100%;
 }
 
 .footer-container__info {
     color: #555;
-    min-height: 330px;
-    width: 20%;
-    min-width: 350px;
+    /* width: 20%;
+    min-width: 350px; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -425,4 +426,75 @@ footer p {
 
 .footer-container__info i {
     color: rgb(255, 136, 156);
+}
+
+.btn-expandir {
+    background-color: transparent;
+    color: #000;
+}
+
+.expandir {
+    height: 318px;
+    transition: all 300ms ease;
+}
+
+.menu {
+    display: none;
+}
+
+@media (max-width:720px) {
+    .header-section__info {
+        top: -80%;
+    }
+
+    .about-info {
+        width: 100%;
+    }
+
+    .about-info p {
+        text-align: justify;
+    }
+
+    .pricing-card {
+        width: 80%;
+    }
+
+    .proyecto {
+        width: 80%;
+    }
+
+    nav {
+        overflow: hidden;
+    }
+
+    nav h3 {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+        height: 15px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .card-client,
+    .pricing-card,
+    .contact-details,
+    .contact-form {
+        min-width: 90%;
+        margin: 0 auto;
+    }
+
+    .contact-map {
+        min-width: 90%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .about-info__text {
+        margin: 0 auto;
+    }
 }
